@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.homepage     = package['homepage']
   s.platforms    = { :ios => "9.0" }
 
-  s.source       = { :git => "https://github.com/dlents/react-native-sketch.git", :tag => "v#{s.version}" }
+  s.source       = { :git => package["repository"]["url"], :branch => "master" }
   s.source_files  = "apple/**/*.{h,m}"
 
   s.dependency 'React-Core'
